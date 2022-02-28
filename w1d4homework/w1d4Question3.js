@@ -11,8 +11,8 @@ function findLongestWord(arrWords){
         if(elem.length > max.length)
             max=elem;
     }
-    return max;
+    return max.length;
 }
 
-const max=findLongestWord(["this","is","the","LONGEST","one"]);
+const max=findLongestWord(["this", "is", "a", "test", "longest"]);
 console.log(max);

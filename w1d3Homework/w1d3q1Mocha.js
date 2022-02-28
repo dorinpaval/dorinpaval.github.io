@@ -2,7 +2,7 @@
 const assert = require("assert");
 /* import from functions.js module */
 
-const functionModule = require("./w1d3Question1.js");
+const functionModule = require("./w1d3Question1");
 const isVowel = functionModule.isVowel;
 
 describe("isVowel returns true if the letter is a vowel", function () {
