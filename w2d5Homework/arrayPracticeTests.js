@@ -20,6 +20,19 @@ const minNumbers=myExports.minNumbers; */
 let numArray;
 let peopleArray;
 
+describe("Average age using a chain of methods", function () {
+    beforeEach(function (){
+        peopleArray = [{ name: "Sam", age: 15 }, { name: "William", age: 6 }, { name: "Lucy", age: 13 }, { name: "Barney", age: 80 }];
+    });
+    it("Average of people with even number ages", function () {
+        assert.strictEqual(evenAges(peopleArray), 43);
+    });
+
+    it("Average of people with odd number ages", function () {
+        assert.strictEqual(oddAges(peopleArray), 14);
+    });
+});
+
 describe("map practice", function () {
     beforeEach(function () {
         numArray = [5, 0, 7, 77, -20, 300, 51, 2];

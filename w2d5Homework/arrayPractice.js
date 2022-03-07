@@ -47,3 +47,16 @@ function minNumbers(arr){
     return arr.reduce((min,item) => Math.min(min,item), Infinity);
 }
 
+function evenAges(arr){
+    return arr.filter(num => num.age%2===0).map(num => num.age).reduce((sum,item,index,array) => { 
+        let total= sum + item;
+        return total/array.length;
+    });       
+}
+
+function oddAges(arr){
+    return arr.filter(num => num.age%2===1).map(num => num.age).reduce((sum,item,index,array) => { 
+        let total= sum + item;
+        return total/array.length;
+    });       
+}
