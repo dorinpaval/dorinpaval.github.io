@@ -1,0 +1,31 @@
+div{
+    margin: 25%;
+    margin-top: 5%;
+    background-color: aqua;
+    padding: 3%;
+    border-radius: 10%;
+
+}
+body{
+    background-color: rgb(247, 225, 197);
+}
+h1{
+    margin-left: 35%;
+    font-style: oblique;
+    color: rgb(0, 48, 179);
+    text-shadow: 2px 0px rgb(8, 253, 220);
+}
+div>input{
+    width: 100%;
+}
+
+div>textarea{
+    width: 100%;
+}
+
+button{
+    border-radius: 10%;
+    font-weight: bold;
+    background-color: cadetblue;
+    color: azure;
+}
