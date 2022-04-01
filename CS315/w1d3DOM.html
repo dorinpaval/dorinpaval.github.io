@@ -1,18 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <script>
-        function addText(){
-            let output="";
-            let val=document.getElementById("input").value;
-            document.getElementById("output").innerHTML+=(val+ "\n");
-        }
-    </script>
 </head>
 <body>
     <h4>Input</h4>
@@ -20,6 +12,7 @@
     <h4>Output</h4>
     <textarea id="output"></textarea>
     <br>
-    <button onclick ="addText()">Click to add</button>
+    <button id="buttonId">Click to add</button>
+    <script src="functions.js"></script>
 </body>
 </html>
