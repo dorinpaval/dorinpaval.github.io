@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CS315/w1d3Homework/inventory.css">
     <title>Document</title>
-
+    <link rel="stylesheet" href="inventory.css">
     <script src="inventory.js"></script>
-    <script>
-        
-    </script>
 </head>
 <body>
     <h1>Inventory</h1>
@@ -24,9 +21,23 @@
     <h4>Ratings:</h4>
     <input type="number" id="ratings">
     <br><br>
-    <button class="button1" onclick="add()">Add</button>
+    <button class="button1">Add</button>
+    <button class="button1">Get static table</button>
+    <br><br>
+    <select id="sortId">
+        <option value="" disabled selected>Select sorting:</option>
+        <option value="byName"> Sort by item name</option>
+        <option value="byCategory">Sort by item category</option>
+        <option value="byQuantity">Sort by quantity</option>
+        <option value="byRating">Sort by rating</option>
+    </select>
 
-
+    <select id="filterId">
+        <option value="" disabled selected>Select filter:</option>
+        <option value="quantity>100">Filter by quantity > 100</option>
+        <option value="rating>4">Filter by rating > 4</option>
+    </select>
+    <br><br>
     <div>
         <table>
             <thhead>
@@ -37,46 +48,9 @@
                 <th>Ratings</th>
                 <th class="editTd"></th>
                 <th class="removeTd"></th>
-                
-            </tr>
+                </tr>
             </thhead>
-            <tbody>
-                <tr id="row1">
-                    <td id="table_row11">Computers</td>
-                    <td id="table_row21">Digital</td>
-                    <td id="table_row31">100</td>
-                    <td id="table_row41">5</td>
-                    <td class="removeTd"><button id="edit1" onclick="edit_row('1')">Edit</button></td>
-                    <td class="removeTd"><button id="save1" class="saveButton" onclick="save_row('1')">Save</button></td>
-                    <td class="removeTd"><button id="remove1" onclick="delete_row('1')">Remove</button></td>
-                </tr>
-                <tr id="row2">
-                    <td id="table_row12">Magazines</td>
-                    <td id="table_row22">Conveniences</td>
-                    <td id="table_row32">1000</td>
-                    <td id="table_row42">4</td>
-                    <td class="removeTd"><button id="edit2" class="editButton" onclick="edit_row('2')">Edit</button></td>
-                    <td class="removeTd"><button id="save2" class="saveButton" onclick="save_row('2')">Save</button></td>
-                    <td class="removeTd"><button id="remove2" class="removeButton" onclick="delete_row('2')">Remove</button></td>
-                </tr> 
-                <tr id="row3">
-                    <td id="table_row13">Books</td>
-                    <td id="table_row23">Education</td>
-                    <td id="table_row33">20</td>
-                    <td id="table_row43">2</td>
-                    <td class="removeTd"><button id="edit3" class="editButton" onclick="edit_row('3')">Edit</button></td>
-                    <td class="removeTd"><button id="save3" class="saveButton" onclick="save_row('3')">Save</button></td>
-                    <td class="removeTd"><button id="remove3" class="removeButton" onclick="delete_row('3')">Remove</button></td>
-                </tr>
-                <tr id="row4">
-                    <td id="table_row14">Houses</td>
-                    <td id="table_row24">Real Estate</td>
-                    <td id="table_row34">2</td>
-                    <td id="table_row44">5</td>
-                    <td class="removeTd"><button id="edit4" class="editButton" onclick="edit_row('4')">Edit</button></td>
-                    <td class="removeTd"><button id="save4" class="saveButton" onclick="save_row('4')">Save</button></td>
-                    <td class="removeTd"><button id="remove4" class="removeButton" onclick="delete_row('4')">Remove</button></td>
-                </tr>
+            <tbody id="body">
             </tbody>
         </table>
     </div>

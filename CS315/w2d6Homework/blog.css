@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(3, 47, 101);
+}
+
+.menu:hover{
+    text-shadow: 1.5px 0.5px palevioletred;
+    font-size: large;
+}
+.menu{
+    font-family: 'Trebuchet MS';
+    font-weight: bolder;
+    text-shadow: 1px 1px aqua;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 20%;
+    border-style: double;
+    border-color: black;
+    padding: 5px;
+    background-color: rgb(141, 190, 255);
+}
+
+.title{
+    float: left;
+    padding: 1%;
+    margin-left: 2%;
+}
+
+#menuDiv{
+    /* clear :both; */
+    width: 65%;
+    float: right;
+    
+    margin-right: 1%;
+    
+}
+
+
+pre{
+    font-family: Calibri;
+}
+
+/* for posts */
+.rightSide{
+    background-color: aliceblue;
+    margin: 3px;
+    padding: 1%;
+    border-radius: 5%;
+    margin-bottom: 2%;
+}
+
+
+.leftSide{
+    background-color: beige;
+    padding: 4%;
+    padding-left: 10%;
+}
+
+img{
+   
+    width: 5em;
+    float: left;
+    object-fit: contain; 
+    max-width: 80%;
+}
+
+.h2Left{
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    background-color: beige;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+
+.paragraph{
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.rightSide img{
+    height: 100%;
+}

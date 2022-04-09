@@ -3,21 +3,14 @@ table{
 }
 .button1{
     background-color: greenyellow;
-    padding: 15px 40px;
+    padding: 10px 30px;
     border-radius: 10px;
-    margin-left: 20%;
+    margin-left: 20px;
     margin-bottom: 10px;
     font-size: 20px ;
 
 }
 
-tr:nth-child(even):hover{
-    background-color: blanchedalmond;
-}
-
-tr:nth-child(odd):hover {
-    background-color: #07bdbdc4;
-  }
 
 
 #quantity{
@@ -47,6 +40,15 @@ tr:nth-child(odd) {
     background-color: #0db3f53a;
   }
 
+tr:nth-child(even):hover{
+    background-color: blanchedalmond;
+}
+
+tr:nth-child(odd):hover {
+    background-color: #07bdbdc4;
+  }
+
+
 tr>td{
     color: rgb(0, 0, 129);
     font-size: 20px;
@@ -66,6 +68,6 @@ tr>td{
     margin-left: 23px;
 }
 body{
-    margin: 5%;
+    margin-left: 10%;
     background-color: rgb(209, 250, 250);
 }

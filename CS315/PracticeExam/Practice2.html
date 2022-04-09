@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <script src="practice2.js"></script>
+    <style>
+        body {
+            margin: 10px;
+        }
+
+        label {
+            width: 15%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enrollment</h1>
+    <div>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter Name" id="nameId" required></div>
+    
+    <br>
+    <p>
+        <label>Select Country:</label>
+        <select id="countryId">
+            <option>USA</option>
+            <option>Other</option>
+        </select>
+        
+    </p>
+    <br id="break">
+    <div id="stateDiv">
+        <label>Select State</label> 
+        
+        <select id="stateId">
+            <option>Albama</option>
+            <option>Arizona</option>
+            <option>Iowa</option>
+            <option>Michigan</option>
+        </select>
+        
+    </div>
+    <br>
+    <div>
+        <label>Zip Code</label>
+        <input type="number" placeholder="Enter Zip" id="zipId">
+    </div>
+    <br>
+    <input type="button" value="Submit" id="submit"></button>
+</body>
+</html>
