@@ -159,6 +159,20 @@ name.innerHTML="<input type='text' id='name_text' value='"+name_new+"'>";
 category.innerHTML="<input type='text' id='category_text' value='"+category_new+"'>";
 quantity.innerHTML="<input type='text' id='quantity_text' value='"+quantity_new+"'>";
 rating.innerHTML="<input type='text' id='rating_text' value='"+rating_new+"'>"
+
+
+let idRow=obj.parentNode.getAttribute("id");
+
+tableArr.forEach(function(item){
+    if(item.id==idRow)
+    {
+        //console.log("In forEach function")
+        item.name=name_new;
+        item.category=category_new;
+        item.quantity=quantity_new;
+        item.rating=rating_new;
+    }
+})
 }
 
 
@@ -166,21 +180,22 @@ rating.innerHTML="<input type='text' id='rating_text' value='"+rating_new+"'>"
 function save_row(obj) 
 {
 
-let idRow=obj.parentNode.getAttribute("id");
+
     
-console.log(idRow);
+//console.log(idRow);
  
- let name_val=obj.parentNode.children[0];
- console.log(name_val.value);
- let category_val=obj.parentNode.children[1].textContent;
- let quantity_val=obj.parentNode.children[2].textContent;
- let rating_val=obj.parentNode.children[3].textContent;
+ let name_val=obj.parentNode.children[0].innerHTML;
+ //console.log(name_val.value);
+ let category_val=obj.parentNode.children[1].value;
+ let quantity_val=obj.parentNode.children[2].value;
+ let rating_val=obj.parentNode.children[3].value;
+console.log("Save function", name_val, category_val, quantity_val,rating_val);
 
  tableArr.forEach(function(item){
     if(item.id==idRow)
     {
         //console.log("In forEach function")
-        item.name=name_val.innerHTML;
+        item.name=name_val;
         item.category=category_val;
         item.quantity=quantity_val;
         item.rating=rating_val;

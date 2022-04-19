@@ -1,0 +1,107 @@
+body{
+    padding: 5%;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+
+.home{
+    color: aqua;
+}
+
+
+.footer{
+    display: flex; 
+    justify-content: space-between;
+    /* margin-top: 3%;  */
+    align-items: baseline; 
+    align-content: flex-end;
+}
+
+.pic1{
+    grid-area: 1;
+}
+.pic2{
+    grid-area: 2;
+}
+.pic3{
+    grid-area: 3;
+}
+.pic4{
+    grid-area: 4;
+}
+.pictures{
+    display: grid;
+    grid-template-areas: "1 2"
+                         "3 4";
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.firstDiv{
+    display: flex; 
+    padding: 2%; 
+    gap:2%;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    border-style: double;
+}
+
+.contactImg{
+    width: 25px;
+    height: 25px;
+    border-style: none;
+    margin-right: 20px;
+}
+
+ul{
+    list-style-image: url("img/twitter.png");
+    font-style: italic;
+}
+
+ul li{
+    margin-top: 5px;
+}
+
+h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-shadow: 1px 2px rgba(0, 255, 8, 0.716);
+}
+
+input{
+    border-radius: 30px;
+    width: 90%;
+    /* height: 40px; */
+    padding: 20px;
+    background-color: rgb(205, 255, 219);
+}
+
+button{
+    margin-left: 50%;
+    border-radius: 30px;
+    padding: 20px;
+    width: 100px;
+    background-color: rgb(103, 205, 2);
+    z-index: 1;
+}
+
+.but{
+    grid-area: 1/4/2/6;
+}
+
+.email{
+    grid-area: 1/1/2/6;
+}
+.submitB{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1f 1fr 1fr;
+    /* grid-template-areas: "email email email email but"; */
+}
+

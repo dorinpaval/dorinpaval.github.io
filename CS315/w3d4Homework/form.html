@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<style>
+    .wrapper{
+        min-width: 200px;
+        max-width: 30%;
+        border-top: 10px solid orange;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-left:1px solid #0080ff;
+        border-right:1px solid #0080ff;
+        border-bottom:1px solid #0080ff;
+        
+    }
+    
+   
+</style>
+</head>
+<body>
+    <div class=" wrapper container pt-3 pb-3 mt-4">
+        <h2 class="mb-3 text-center">Responsive Registration Form</h2>
+
+        <form action="preview.html" method="get" class="needs-validation" novalidate>
+            <div class="input-group mb-4">
+                <span for="validationCustom01" class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                  </svg></span>
+                <input type="email" id="validationCustom01" name="email" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon1" required>
+                <div class="invalid-feedback">
+                  Please Enter a valid Email
+                </div>
+              </div>
+              
+              <div class="input-group mb-3">
+                  <span for="validationCustom02" class="input-group-text" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                  </svg></span>
+                <input type="password" id="validationCustom02" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2" required>
+                <div class="invalid-feedback">
+                  Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters
+                </div>
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" for="validationDefault03" id="basic-addon3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                </svg></span>
+              <input type="password" name="pass22"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" id="validationCustom03" class="form-control" placeholder="Re-type Password" aria-label="Password" aria-describedby="basic-addon3" required>
+              <div class="invalid-feedback">
+               password not matching
+              </div>
+            </div>
+  
+       
+            <div class=" input-group mb-4">
+                <span class="input-group-text" for="validationDefault04" id="basic-addon4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></span>
+              <input type="text" id="validationCustom04" name="firstname" class="form-control " placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon4" required>
+              <div class="invalid-feedback">
+                please Enter your First Name
+               </div>
+              <span class="input-group-text" for="validationDefault04"  id="basic-addon5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg></span>
+          <input type="text" id="validationCustom05" name="lastname" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon5" required>
+          <div class="invalid-feedback">
+            please Enter your Last Name
+           </div>
+            </div>
+
+           
+        <div class="form-check form-check-inline mb-3">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male" required >
+            <label class="form-check-label" for="inlineRadio1">Male</label>
+            
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Female" required>
+            <label class="form-check-label" for="inlineRadio2">Female</label>
+           
+          </div>      
+
+
+
+          <select class="form-select form-select-sm mb-3" id="validationCustom06" name="select" aria-label=".form-select-sm example" required>
+            <option selected disabled value="">Select a Country</option>
+            <option >USA</option>
+            <option >Romania</option>
+            <option >Spain</option>
+            <option >Mexic</option>
+            <option >Other</option>
+          </select>
+          
+              
+              
+        
+            <div class="form-check mb-3 fs-6">
+            <input class="form-check-input" name="agreement" type="checkbox" value ="I agree with the terms and conditions"  id="flexCheckChecked"  required> 
+            <label class="form-check-label"  for="flexCheckChecked" >
+                I agree with the terms and conditions
+            </label>
+            </div>
+            <div class="form-check mb-4">
+            <input class="form-check-input" name="agreement2" type="checkbox" value="I want to receive the newsletter"  >
+            <label class="form-check-label" for="flexCheckChecked">
+                I want to receive the newsletter 
+            </label>
+            </div>
+
+          
+            
+          <div class="d-grid gap-2 ">
+            <button class="btn btn-warning text-white" style="background-color: orange;" type="submit">Register</button>
+            
+          </div>
+              
+              
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

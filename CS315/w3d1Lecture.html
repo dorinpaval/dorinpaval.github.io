@@ -1,0 +1,147 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3d1Lecture</title>
+    <style>
+        body {
+  margin: 40px;
+}
+
+.sidebar {
+		grid-area: 2/1/4/2;
+	}
+.sidebar2 {
+
+		grid-area: 2/4/4/5;
+	}
+.content {
+	grid-area: 2/2/4/3;
+}
+.content2 {
+	grid-area: content2;
+}
+
+.header {
+	grid-area: header;
+}
+
+.footer{
+    background-color: #999;
+    grid-area: 3/4/1/4;
+
+}
+
+	.wrapper {
+		display: grid;
+        grid-gap: 10px;
+		grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 25% 50% 0% 25%;
+		/* grid-template-areas:
+               "....... header  header .........."
+				/* "sidebar content content2 sidebar2"; */
+                /* "sidebar content content2 sidebar2"
+                "footer footer footer footer";  
+		background-color: #fff; */
+		color: #444;
+	}
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.header {
+  background-color: #999;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box header">Header</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="box content">Content</div>
+        <div class="box content2">Content2</div>
+        <div class="box sidebar2">Sidebar2</div>
+        <div class="box footer">Footer</div>
+
+      </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            height: 400%;
+            background-color: lightblue;
+            grid-template-columns:  15% 15% 15% 15%; 
+            grid-template-rows: 25% 25% 25% 25%;
+            grid-template-areas: "h c g a"
+                                 ". c b e"
+                                 ". c . e"
+                                 "d f f e";
+                                 
+        }
+
+        .box{
+            
+            display: flex;
+            justify-content: center;
+            background-color: deepskyblue;
+            margin: 5px;
+            font-size: larger;
+        }
+
+        .a{
+            grid-area: a;
+        }
+        .b{
+            grid-area: b;
+        }
+        .c{
+            grid-area: c;
+        }
+        .d{
+            grid-area: d;
+        }
+        .e{
+            grid-area: e;
+        }
+        .f{
+            grid-area: f;
+        }
+        .g{
+            grid-area: g;
+        }
+        .h{
+            grid-area: h;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+        <div class="box g">G</div>
+        <div class="box h">H</div>
+
+    </div>
+</body>
+</html>

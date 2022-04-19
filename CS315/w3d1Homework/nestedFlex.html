@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .allElem{
+            display: flex;
+            column-gap: 15px;
+        }
+        .article{
+            padding: 2%;
+            background-color: aqua;
+        }
+        .buttons{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .blush{
+            width: 350px;
+        }
+
+
+        .blackBox1 {
+            display: flex;
+            margin: 5%;
+            height: 60px;
+            background-color: darkgray;
+            border-style: double;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .blackBox2 {
+            display: flex;
+            margin: 5%;
+            height: 60px;
+            background-color: darkgray;
+            border-style: double;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .blackBox3 {
+            display: flex;
+            margin: 5%;
+            height: 60px;
+            background-color: darkgray;
+            border-style: double;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu{
+            margin-left: 5%;
+            display: flex;
+            column-gap: 15px;
+        }
+        .menu2{
+            margin-right: 5%;
+            display: flex;
+            column-gap: 15px;
+        }
+
+
+
+        .wrapDiv{
+            display: flex;
+           flex-wrap: wrap;
+           margin-top: 20px;
+        }
+        .photos {
+height:40vh;
+flex-grow: 1;
+        }
+        .photos:last-child{
+            flex-grow: 7;
+        }
+      img{
+          max-height: 100%;
+          min-width:100%;
+          object-fit:cover;
+         
+      }
+    </style>
+</head>
+<body>
+    <div class="allElem">
+        <div class="article">
+            <div>
+                <h2>First Article</h2>
+                <p>"After the Shanghai municipal government issued its new policy that all students would have to stay home for online schooling 
+                    starting from March 12 due to the recent Omicron outbreak, we have been witnessing the responses from our society and understood
+                     how difficult it was for the parents who had to juggle between their work and kids," Cecilia Yang, director of communications at 
+                     Mandarin Oriental Pudong, Shanghai, tells CNN Travel.</p>
+            </div>
+        </div>
+        <div class="article">
+            <div>
+                <h2>Second Article</h2>
+                <p>"After the Shanghai municipal government issued its new policy that all students would have to stay home for online schooling 
+                    starting from March 12 due to the recent Omicron outbreak, we have been witnessing the responses from our society and understood
+                     how difficult it was for the parents who had to juggle between their work and kids," Cecilia Yang, director of communications at 
+                     Mandarin Oriental Pudong, Shanghai, tells CNN Travel.</p>
+            </div>
+        </div>
+        <div class="article">
+            <div class="buttons">
+                <button> Smile</button>
+                <button>Laugh</button>
+                <button>Wink</button>
+                <button>Shrug</button>
+            </div>
+            <button class="blush">Blush</button>
+            <div>
+                <p>"After the Shanghai municipal government issued its new policy that all students would have to stay home for online schooling starting
+                     from March 12 due to the recent Omicron outbreak.</p><p>we have been witnessing the responses from our society and understood how difficult 
+                     it was for the parents who had to juggle between their work and kids," Cecilia Yang, director of communications at Mandarin Oriental 
+                     Pudong, Shanghai, tells CNN Travel.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br>
+    <div>
+        <div class="blackBox1">
+            <span>Logo bakery</span>
+
+            <div>
+                <span>Home</span>
+                <span>About us</span>
+                <span>Photos</span>
+            </div>
+
+            <button>Contact</button>
+        </div>
+        <div class="blackBox2">
+            <span style="margin-left: 5%;">Logo bakery</span>
+            <div class="menu2" >
+                <span>Home</span>
+                <span>About us</span>
+                <span>Photos</span>
+                <button>Contact</button>
+            </div>
+
+        </div>
+        <div class="blackBox3">
+            <div class="menu">
+                <span>Home</span>
+                <span>About us</span>
+                <span>Photos</span>
+                <button>Contact</button>
+            </div>
+            <span style="margin-right: 5%;">Logo bakery</span>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="wrapDiv">
+        <div class="photos"> <img src="../../img/one.jpg" >   </div>
+        <div class="photos" ><img src="../../img/two.jpg">  </div>
+        <div class="photos"><img src="../../img/three.jpg"> </div>
+        <div class="photos" ><img src="../../img/four.jpg"> </div>
+        <div class="photos" > <img src="../../img/five.jpg"> </div>
+        <div class="photos" ><img src="../../img/six.jpg"> </div>
+        <div class="photos" ><img src="../../img/seven.jpg"> </div>
+        <div class="photos" ><img src="../../img/eight.jpg"> </div>
+        <div class="photos" ><img src="../../img/nine.jpeg"> </div>
+        
+            </div>
+</body>
+</html>

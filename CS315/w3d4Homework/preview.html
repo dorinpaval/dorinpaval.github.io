@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<style>
+    .wrapper{
+        min-width: 200px;
+        max-width: 30%;
+        border-top: 10px solid orange;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-left:1px solid #0080ff;
+        border-right:1px solid #0080ff;
+        border-bottom:1px solid #0080ff;
+        
+    }
+    
+   
+</style>
+</head>
+</head>
+<body>
+    <div class="wrapper container pt-3 pb-3 mt-4">
+        <h1>Preview:</h1>
+        <div id="info">
+
+        </div><br>
+        <div>
+            <button id="savebtn" class="btn btn-warning">Save</button>
+            <button id="editbtn" class="btn btn-success">Edit</button>
+        </div>
+    </div>
+    <script>
+let savebtn = document.getElementById("savebtn");
+let editbtn = document.getElementById("editbtn");
+let info = document.getElementById("info");
+
+editbtn.onclick = edit;
+savebtn.onclick = save;
+
+const urlParams = new URLSearchParams(window.location.search);
+
+
+        const email = urlParams.get('email');
+        const firstname = urlParams.get('firstname');
+        const lastname = urlParams.get('lastname');
+        const pass = urlParams.get('pass');
+        const gender = urlParams.get('inlineRadioOptions');
+        const country = urlParams.get('select');
+        const agreement = 'You agreed';
+        const agreement2 = 'You subscribed';
+
+
+
+    let label = document.createElement("label");
+        label.innerText= "Email : " + email +"\n" + "Password : " + pass +"\n"+ "First Name :" + firstname +"\n"+ "Last Name :" + lastname+"\n"+ "Gender : " + gender +"\n"+ "Country : "+ country +"\n"+ "Terms and conditions : " + agreement +"\n"+ "Newsletter : " + agreement2;
+        info.append(label) 
+
+        
+           
+         function edit(){
+             window.location.href= "form.html" + window.location.search;
+         }  
+
+         function save(){
+             window.location.href= "thankyou.html"+ window.location.search;
+         }
+    </script>
+</body>
+</html>

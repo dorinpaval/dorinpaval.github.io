@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+        .blackBox1 {
+            display: flex;
+            margin: 5%;
+            height: 60px;
+            background-color: darkgray;
+            border-style: double;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .blackBox2 {
+            display: flex;
+            margin: 5%;
+            height: 60px;
+            background-color: darkgray;
+            border-style: double;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .blackBox3 {
+            display: flex;
+            margin: 5%;
+            height: 60px;
+            background-color: darkgray;
+            border-style: double;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu{
+            margin-left: 5%;
+            display: flex;
+            column-gap: 15px;
+        }
+        .menu2{
+            margin-right: 5%;
+            display: flex;
+            column-gap: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="blackBox1">
+            <span>Logo bakery</span>
+
+            <div>
+                <span>Home</span>
+                <span>About us</span>
+                <span>Photos</span>
+            </div>
+
+            <button>Contact</button>
+        </div>
+        <div class="blackBox2">
+            <span style="margin-left: 5%;">Logo bakery</span>
+            <div class="menu2" >
+                <span>Home</span>
+                <span>About us</span>
+                <span>Photos</span>
+                <button>Contact</button>
+            </div>
+
+        </div>
+        <div class="blackBox3">
+            <div class="menu">
+                <span>Home</span>
+                <span>About us</span>
+                <span>Photos</span>
+                <button>Contact</button>
+            </div>
+            <span style="margin-right: 5%;">Logo bakery</span>
+        </div>
+    </div>
+</body>
+
+</html>

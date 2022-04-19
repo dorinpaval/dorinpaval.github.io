@@ -44,7 +44,7 @@ pre{
 .rightSide{
     background-color: aliceblue;
     margin: 3px;
-    padding: 1%;
+    padding: 2%;
     border-radius: 5%;
     margin-bottom: 2%;
 }
@@ -82,3 +82,4 @@ img{
 .rightSide img{
     height: 100%;
 }
+
