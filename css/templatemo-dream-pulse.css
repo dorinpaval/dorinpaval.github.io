@@ -548,7 +548,7 @@ figure.effect-bubba:hover p {
   box-shadow: none;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 2600px) {
   .tm-sidebar {
     width: 30%;
     max-width: none;
