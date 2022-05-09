@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script>
+        function sum(){
+            const first= +(document.getElementById("firstNo").value);
+            const second= +(document.getElementById("secondNo").value);
+            document.getElementById("output").innerHTML=first+second;
+        }
+
+        function dif(){
+            const first= +(document.getElementById("firstNo").value);
+            const second= +(document.getElementById("secondNo").value);
+            document.getElementById("output").innerHTML=first-second;
+        }
+
+        function mult(){
+            const first= +(document.getElementById("firstNo").value);
+            const second= +(document.getElementById("secondNo").value);
+            document.getElementById("output").innerHTML=first*second;
+        }
+
+        function clearr(){
+            document.getElementById("firstNo").value="";
+            document.getElementById("secondNo").value="";
+            document.getElementById("output").value="";
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Calculator</h1>
+    <div><h3>First Value</h3>
+    <input type="number" id="firstNo" onfocus="this.value=''">
+    <h3>Second Value</h3>
+    <input type="number" id="secondNo" onfocus="this.value=''"">
+    <br> <br>
+    <button onclick="sum()"> + </button>  &nbsp;  &nbsp;
+    <button onclick="dif()"> - </button>  &nbsp;  &nbsp;
+    <button onclick="mult()"> * </button>
+    <br>
+    <h3>The result is</h3>
+    <textarea id="output"></textarea>
+    <br>
+    <button onclick="clearr()">Clear</button>
+    </div>
+</body>
+</html>
