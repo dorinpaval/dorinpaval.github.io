@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function swap(){
+            let pic1=document.getElementById("pic1");
+            let pic2=document.getElementById("pic2");
+            let aux=pic1['src'];
+            pic1['src']=pic2['src'];
+            pic2['src']=aux;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <img id="pic1" src="seven.jpg" style="width: 300px;">
+        <img id="pic2" src="six.jpg" style="width: 300px;">
+    </div>
+    <br>
+    <input id="btn"type="button" value="Swap Pictures" onclick="swap()" style="margin-left: 250px;">
+</body>
+</html>
