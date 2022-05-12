@@ -1,17 +1,22 @@
 "use strict";
 
-Array.prototype.removeDuplicatesAsync= function (){
+async function noDuplicates(arr){
     let result=[];
+    for(let i of arr){
+        if(!result.includes(i)){
+            result.push(i)
+        }}
+        return result;
+}
+
+Array.prototype.removeDuplicatesAsync= async function (){
     let arr=this;
-    return new Promise(function (res, err){
-        for(let i of arr){
-                    if(!result.includes(i)){
-                        result.push(i)
-                    }}
+    return new Promise( async function (res, err){
+        let result= await noDuplicates(arr);
         if(result.length>0)
             res(result);
         else
-            err("Error")
+            err("No elements in the array")
     }).then(console.log)
     .catch(console.log)
 }
