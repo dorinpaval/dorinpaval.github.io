@@ -1,6 +1,6 @@
 "use strict";
 
-async function isPrime(num){
+ function isPrime(num){
     for(let i = 2, s = Math.sqrt(num); i <= s; i++)
     if(num % i === 0) 
         return false; 
@@ -12,8 +12,8 @@ const isPrim = num => {
        setTimeout( async function(){
         let prime= await isPrime(num);
         if(!prime)
-                return err({prime:false}); 
-        return res({prime:true})}, 5000);
+                 err({prime:false}); 
+        res({prime:true})}, 5000);
 })
 }
 
