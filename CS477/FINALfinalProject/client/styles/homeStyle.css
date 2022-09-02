@@ -1,0 +1,591 @@
+@font-face {
+    font-family: "TwitterChirp";
+    src: url("../fonts/chirp-regular-web.woff") format("woff2"),
+        url("../fonts/chirp-bold-web.woff") format("woff"),
+        url("../fonts/chirp-heavy-web.woff") format("woff");
+}
+
+html {
+    font-family: TwitterChirp, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --twitter-theme-color: #50b7f5;
+    --twitter-background-color: rgba(134, 128, 128, 0.151);
+}
+
+.nav_logo {
+    width: 50px;
+    height: 30px;
+    color: white;
+    fill: currentColor;
+}
+
+.Menu_options {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Menu_options .material-icons {
+    padding: 20px;
+    color: white;
+}
+
+.Menu_options h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: white;
+}
+
+.Menu_options:hover {
+    background-color: var(--twitter-background-color);
+    border-radius: 30px;
+    color: var(--twitter-theme-color);
+}
+
+.tweet_btn {
+    width: 100%;
+    background-color: var(--twitter-theme-color);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.tweet_btn:hover {
+    background-color: #0a98f0
+}
+
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+nav {
+    flex: 0.2;
+    border-right: 1px solid rgba(129, 128, 128, 0.635);
+    min-width: 250px;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+/* == menu section */
+
+main {
+    flex: 0.5;
+    border-right: 1px solid rgba(129, 128, 128, 0.635);
+    min-width: fit-content;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+h3 {
+    margin-top: 0%;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    z-index: 10;
+    border: 1px solid rgba(129, 128, 128, 0.635);
+    padding: 15px 20px;
+
+}
+
+main::-webkit-scrollbar {
+    display: none;
+
+}
+
+.header h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tweet_box-input img {
+    border-radius: 50%;
+    height: 40px;
+
+
+}
+
+.tweet_box {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(129, 128, 128, 0.635);
+    padding-right: 10px;
+}
+
+.tweet_box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet_box-input {
+    display: flex;
+    padding: 20px;
+
+}
+
+.tweet_box-input textarea {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+.tweet_box-input button {
+    background-color: var(--twitter-theme-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.post_profile-image img {
+    border-radius: 50%;
+    height: 40px;
+
+}
+
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(129, 128, 128, 0.635);
+    padding-bottom: 10px;
+}
+
+.post_body img {
+    width: 450px;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 1px solid rgba(129, 128, 128, 0.635);
+
+}
+
+.post_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+
+}
+
+.post_badge {
+    font-size: 14px !important;
+    color: var(--twitter-theme-color);
+    margin-right: 5px;
+
+}
+
+.header-icon-section {
+    font-weight: 600;
+    font-size: 12px;
+    color: grey;
+}
+
+.post_header-text h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+
+}
+
+.post_header-discription {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.post_body {
+    flex: 1;
+    padding: 10px;
+    color: white;
+}
+
+.post_profile-image {
+    padding: 20px;
+}
+
+
+/* == aside  */
+
+aside {
+    flex: 0.3;
+}
+
+.aside_input {
+    display: flex;
+    align-items: center;
+    background-color: rgba(149, 147, 147, 0.202);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.aside_input:focus {
+    border: 1px solid #0a98f0;
+}
+
+.aside_input input {
+    border: none;
+    background-color: rgba(149, 147, 147, 0);
+    outline: none;
+    width: 300px;
+    color: white;
+    font-size: medium;
+}
+
+.aside_search-icon {
+    color: gray;
+}
+
+.aside_container {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: rgba(149, 147, 147, 0.202);
+    border-radius: 20px;
+}
+
+.aside_container h2 {
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+}
+
+#currentUser {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    display: flex;
+    align-self: flex-end;
+    width: 250px;
+}
+
+#currentUser:hover {
+    background-color: var(--twitter-background-color);
+}
+
+#userName {
+    position: static;
+    bottom: 35px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+#profilePage {
+    display: none;
+}
+
+#tweetsPage {
+    display: block;
+}
+
+#tweets {
+    max-width: fit-content;
+}
+
+.userToFollow {
+    color: white;
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    background-color: black;
+    margin-bottom: 4px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.followBtn {
+    background-color: #50b7f5;
+    border-radius: 30px;
+    border-width: 0px;
+    font-size: 12px;
+}
+
+.followBtn:hover {
+    background-color: #0a98f0;
+}
+
+#usersContainer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    color: white;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.names {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+.username {
+    color: gray;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.unfollowBtn {
+    background-color: white;
+    border-radius: 30px;
+    border-width: 0px;
+    display: none;
+    color: black;
+    font-size: 12px;
+}
+
+.unfollowBtnProfile {
+    background-color: white;
+    border-radius: 30px;
+    border-width: 0px;
+    color: black;
+    font-size: 12px;
+}
+
+.unfollowBtnProfile:hover {
+    background-color: #50b7f5;
+    color: white;
+}
+
+.unfollowBtn:hover {
+    background-color: #50b7f5;
+    color: white;
+}
+
+.pop-content {
+    display: none;
+    background-color: black;
+}
+
+.popover-header {
+    background-color: #063c5d;
+    color: white;
+    width: 250px;
+    height: 30px;
+    font-size: medium;
+    text-align: center;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.popover-body {
+    background-color: #063c5d;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: medium;
+    text-align: center;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+.popover-body:hover {
+    background-color: #0279c4;
+    text-decoration: underline;
+}
+
+.popover {
+    background-color: black !important;
+    border: 0px;
+}
+
+#logout {
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#profileContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    flex: row;
+    cursor: pointer;
+}
+
+#header>div {
+    flex: 1;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.profileHeader {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    z-index: 10;
+    padding: 15px;
+    padding-bottom: 10px;
+}
+
+.profileHeader:hover {
+    background-color: var(--twitter-background-color);
+}
+
+#userInfo:hover {
+    background-color: var(--twitter-background-color);
+}
+
+#followingContent {
+    display: none;
+}
+
+#followersContent {
+    display: none;
+}
+
+.user_profile-image img {
+    border-radius: 50%;
+    height: 80px;
+}
+
+.user_profile-image {
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-left: 33%;
+    text-align: center;
+}
+
+.profilBody {
+    font-size: 17px;
+    color: white;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-weight: 300;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.profilBody:hover {
+    background-color: var(--twitter-background-color);
+}
+
+.profilebodyContent {
+    font-weight: 500;
+    color: #0a98f0;
+    /* padding-left: 10px; */
+}
+
+.username {
+    display: block;
+    margin-top: 1px;
+}
+
+.usernames {
+    font-size: 1.6rem !important;
+    padding-left: 10px;
+}
+
+.user-row {
+    margin-bottom: 14px;
+}
+
+.user-row:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-user {
+    margin: 13px 0;
+    padding: 5px;
+    height: 100%;
+}
+
+.dropdown-user:hover {
+    cursor: pointer;
+}
+
+.table-user-information>tbody>tr {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information>tbody>tr:first-child {
+    border-top: 0;
+}
+
+
+.table-user-information>tbody>tr>td {
+    border-top: 0;
+}
+
+.toppad {
+    margin-top: 20px;
+    background-color: black;
+}
+
+.container {
+    background-color: black;
+    max-width: 620px;
+}
+
+.table-user-information {
+    margin-left: 20%;
+}
+
+#followingContainer,
+#followersContainer {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    color: white;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+
+
+.image-upload>label>img{
+    width: 40px;
+    opacity: 90%;
+}
+ .image-upload>input {
+    display: none;
+  }
+
+.alignUpload{
+    display: flex;
+    flex-direction: row;
+}
+.preview{
+    align-content: center;
+}
+
+.preview> img{
+    margin-left: 25%;
+    width: 300px;
+}
