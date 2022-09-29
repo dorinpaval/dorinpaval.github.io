@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Paval</title>
+    <script src="exam.js"></script>
+    <link rel="stylesheet" href="myStyle.css"></style>
+</head>
+<body id="bodyId">
+    <h2>Sites</h2>
+    <div>
+    <span name="span" class="hideRed">*</span>
+    <input id="siteId" type="text" placeholder="Enter Site Name" onfocus="this.value=''">
+    <span name="span" class="hideRed">*</span>
+    <input id="addressId" type="text" placeholder="Enter Address" onfocus="this.value=''">
+    <span name="span" class="hideRed">*</span>
+    <input id="keywordsId" type="text" placeholder="Enter Keywords"onfocus="this.value=''">
+    <input type="button" value="Add" id="addBtn">
+    </div>
+    <p class="hideRed">Please fill up all the fields</p>
+    <div class="hide" id="divCheck">
+        Add to:
+        <input id="tableId" type="checkbox" >Table
+        <input id="listId" type="checkbox" >List
+    </div>
+    <div>
+        <h3>List</h3> 
+        <p id="list"></p>
+
+    </div>
+    <div>
+        <h3>Table</h3>
+        <table id="table">
+            <tr class='tableHead'><b><td>Site Name</td><td>Keywords</td></b></tr>
+            <tr><td><a href="www.google.com">google</a></td><td>221</td></tr>
+        </table>
+    </div>
+    <button class="hide" id="buttonId">Remove site</button>
+</body>
+</html>

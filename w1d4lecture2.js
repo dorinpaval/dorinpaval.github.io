@@ -17,4 +17,4 @@ for (let sign of exp) {
 if (okk === 1 && balanced.length===0)
     console.log("Balanced");
 else
-    console.log("Not Balanced");
+    console.log("Not Balanced");''
